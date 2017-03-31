@@ -22,7 +22,7 @@ function varargout = GUI_Line_Circle(varargin)
 
 % Edit the above text to modify the response to help GUI_Line_Circle
 
-% Last Modified by GUIDE v2.5 31-Mar-2017 20:15:18
+% Last Modified by GUIDE v2.5 31-Mar-2017 22:00:09
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -102,6 +102,7 @@ function pushbutton_MidBresenhamLine_Callback(hObject, eventdata, handles)
 % hObject    handle to pushbutton_MidBresenhamLine (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
+axes(handles.axes_ML);
 x1=str2double(get(handles.edit_x1,'String'))
 x2=str2double(get(handles.edit_x2,'String'))
 y1=str2double(get(handles.edit_y1,'String'))
@@ -137,6 +138,7 @@ function pushbutton_MidBresenhamCircle_Callback(hObject, eventdata, handles)
 % hObject    handle to pushbutton_MidBresenhamCircle (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
+axes(handles.axes_MC);
 r=str2double(get(handles.edit_r,'String'))
 MidBresenhamCircle(r)
 
@@ -146,6 +148,7 @@ function pushbutton_MidBresenhamEllipse_Callback(hObject, eventdata, handles)
 % hObject    handle to pushbutton_MidBresenhamEllipse (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
+axes(handles.axes_ME);
 a=str2double(get(handles.edit_a,'String'))
 b=str2double(get(handles.edit_b,'String'))
 MidBresenhamEllipse(a,b)
@@ -156,6 +159,7 @@ function pushbutton_DDALine_Callback(hObject, eventdata, handles)
 % hObject    handle to pushbutton_DDALine (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
+axes(handles.axes_DL);
 x1=str2double(get(handles.edit_x1,'String'))
 x2=str2double(get(handles.edit_x2,'String'))
 y1=str2double(get(handles.edit_y1,'String'))
@@ -276,3 +280,18 @@ function edit_b_CreateFcn(hObject, eventdata, handles)
 if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
     set(hObject,'BackgroundColor','white');
 end
+
+
+% --- Executes on button press in pushbutton_Clear.
+function pushbutton_Clear_Callback(hObject, eventdata, handles)
+% hObject    handle to pushbutton_Clear (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+axes(handles.axes_DL)
+cla
+axes(handles.axes_ML)
+cla
+axes(handles.axes_MC)
+cla
+axes(handles.axes_ME)
+cla
