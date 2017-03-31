@@ -21,6 +21,7 @@ for i=0:max
     x=x+xIncrease;
     y=y+yIncrease;
 end
+hold off;
 grid on;
 xlabel('x÷·œﬂ');
 ylabel('y÷·œﬂ');
