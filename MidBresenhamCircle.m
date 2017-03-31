@@ -12,4 +12,8 @@ while(x<=y)
     end
     x=x+1;
 end
+grid on;
+xlabel('x轴线');
+ylabel('y轴线');
+title('MidBresenhamCircle算法模拟画圆');
 end
