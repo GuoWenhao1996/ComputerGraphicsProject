@@ -4,6 +4,11 @@ function DDALine(x1,y1,x2,y2)
 % y1                      第1个点的纵坐标
 % x2                      第2个点的横坐标
 % y2                      第2个点的纵坐标
+if(x1>x2)
+    x=x1;   y=y1;
+    x1=x2;  y1=y2;
+    x2=x;   y2=y;
+end
 dx=x2-x1;
 dy=y2-y1;
 x=x1;
