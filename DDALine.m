@@ -18,10 +18,10 @@ if(abs(dx)<abs(dy))
 else
     max=dx;
 end
-xIncrease=dx/max;
-yIncrease=dy/max;
+xIncrease=dx/abs(max);
+yIncrease=dy/abs(max);
 hold on;
-for i=0:max
+for i=0:abs(max)
     plot(round(x),round(y),'.r');
     x=x+xIncrease;
     y=y+yIncrease;

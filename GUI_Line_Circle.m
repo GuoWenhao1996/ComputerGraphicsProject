@@ -22,7 +22,7 @@ function varargout = GUI_Line_Circle(varargin)
 
 % Edit the above text to modify the response to help GUI_Line_Circle
 
-% Last Modified by GUIDE v2.5 31-Mar-2017 22:00:09
+% Last Modified by GUIDE v2.5 07-Apr-2017 17:23:57
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -136,8 +136,7 @@ end
 % --- Executes on button press in pushbutton_MidBresenhamCircle.
 function pushbutton_MidBresenhamCircle_Callback(hObject, eventdata, handles)
 % hObject    handle to pushbutton_MidBresenhamCircle (see GCBO)
-% eventdata  reserved - to be defined in a future version of MATLAB
-% handles    structure with handles and user data (see GUIDATA)
+% eventdata  reserved - to be defined in a future version of MATLAB9
 axes(handles.axes_MC);
 r=str2double(get(handles.edit_r,'String'))
 MidBresenhamCircle(r)
