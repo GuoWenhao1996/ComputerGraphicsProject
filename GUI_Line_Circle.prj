@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="89778925" file="E:\ComputerGraphicsProject\GUI_Line_Circle.prj" location="E:\ComputerGraphicsProject" name="GUI_Line_Circle" target="target.mlapps" target-name="应用程序打包">
+  <configuration build-checksum="25812868" file="E:\ComputerGraphicsProject\GUI_Line_Circle.prj" location="E:\ComputerGraphicsProject" name="GUI_Line_Circle" target="target.mlapps" target-name="应用程序打包">
     <param.appname>GUI_Line_Circle</param.appname>
     <param.authnamewatermark>郭大神</param.authnamewatermark>
     <param.email>1842287753@qq.com</param.email>
@@ -7,9 +7,9 @@
     <param.icon />
     <param.icons />
     <param.summary>感觉自己棒棒哒</param.summary>
-    <param.description>修改DDA小bug</param.description>
+    <param.description>完善DDALine  MidBresenhamLine  中画直线 满足各种斜率</param.description>
     <param.screenshot />
-    <param.version>1.1</param.version>
+    <param.version>2.0</param.version>
     <param.products.name />
     <param.products.id />
     <param.products.version />
