@@ -22,7 +22,7 @@ function varargout = GUI_Line_Circle(varargin)
 
 % Edit the above text to modify the response to help GUI_Line_Circle
 
-% Last Modified by GUIDE v2.5 07-Apr-2017 17:23:57
+% Last Modified by GUIDE v2.5 12-May-2017 20:08:03
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -294,3 +294,87 @@ axes(handles.axes_MC)
 cla
 axes(handles.axes_ME)
 cla
+
+
+
+function edit_panddingx_Callback(hObject, eventdata, handles)
+% hObject    handle to edit_panddingx (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hints: get(hObject,'String') returns contents of edit_panddingx as text
+%        str2double(get(hObject,'String')) returns contents of edit_panddingx as a double
+
+
+% --- Executes during object creation, after setting all properties.
+function edit_panddingx_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to edit_panddingx (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    empty - handles not created until after all CreateFcns called
+
+% Hint: edit controls usually have a white background on Windows.
+%       See ISPC and COMPUTER.
+if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
+    set(hObject,'BackgroundColor','white');
+end
+
+
+% --- Executes on button press in pushbutton_Panning.
+function pushbutton_Panning_Callback(hObject, eventdata, handles)
+% hObject    handle to pushbutton_Panning (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+axes(handles.axes_DL);
+x1=str2double(get(handles.edit_x1,'String'))
+x2=str2double(get(handles.edit_x2,'String'))
+y1=str2double(get(handles.edit_y1,'String'))
+y2=str2double(get(handles.edit_y2,'String'))
+x=str2double(get(handles.edit_panddingx,'String'))
+y=str2double(get(handles.edit_panddingy,'String'))
+Panning(x1,y1,x2,y2,x,y)
+
+
+
+function edit12_Callback(hObject, eventdata, handles)
+% hObject    handle to edit12 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hints: get(hObject,'String') returns contents of edit12 as text
+%        str2double(get(hObject,'String')) returns contents of edit12 as a double
+
+
+% --- Executes during object creation, after setting all properties.
+function edit12_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to edit12 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    empty - handles not created until after all CreateFcns called
+
+% Hint: edit controls usually have a white background on Windows.
+%       See ISPC and COMPUTER.
+if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
+    set(hObject,'BackgroundColor','white');
+end
+
+
+
+function edit_panddingy_Callback(hObject, eventdata, handles)
+% hObject    handle to edit_panddingy (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hints: get(hObject,'String') returns contents of edit_panddingy as text
+%        str2double(get(hObject,'String')) returns contents of edit_panddingy as a double
+
+
+% --- Executes during object creation, after setting all properties.
+function edit_panddingy_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to edit_panddingy (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    empty - handles not created until after all CreateFcns called
+
+% Hint: edit controls usually have a white background on Windows.
+%       See ISPC and COMPUTER.
+if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
+    set(hObject,'BackgroundColor','white');
+end
