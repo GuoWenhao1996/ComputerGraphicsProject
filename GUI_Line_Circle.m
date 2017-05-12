@@ -107,7 +107,7 @@ x1=str2double(get(handles.edit_x1,'String'))
 x2=str2double(get(handles.edit_x2,'String'))
 y1=str2double(get(handles.edit_y1,'String'))
 y2=str2double(get(handles.edit_y2,'String'))
-MidBresenhamLine(x1,y1,x2,y2)
+MidBresenhamLine(x1,y1,x2,y2,'.r')
 
 
 
@@ -139,7 +139,7 @@ function pushbutton_MidBresenhamCircle_Callback(hObject, eventdata, handles)
 % eventdata  reserved - to be defined in a future version of MATLAB9
 axes(handles.axes_MC);
 r=str2double(get(handles.edit_r,'String'))
-MidBresenhamCircle(r)
+MidBresenhamCircle(r,'.r')
 
 
 % --- Executes on button press in pushbutton_MidBresenhamEllipse.
@@ -150,7 +150,7 @@ function pushbutton_MidBresenhamEllipse_Callback(hObject, eventdata, handles)
 axes(handles.axes_ME);
 a=str2double(get(handles.edit_a,'String'))
 b=str2double(get(handles.edit_b,'String'))
-MidBresenhamEllipse(a,b)
+MidBresenhamEllipse(a,b,'.r')
 
 
 % --- Executes on button press in pushbutton_DDALine.
@@ -163,7 +163,7 @@ x1=str2double(get(handles.edit_x1,'String'))
 x2=str2double(get(handles.edit_x2,'String'))
 y1=str2double(get(handles.edit_y1,'String'))
 y2=str2double(get(handles.edit_y2,'String'))
-DDALine(x1,y1,x2,y2)
+DDALine(x1,y1,x2,y2,'.r')
 
 
 

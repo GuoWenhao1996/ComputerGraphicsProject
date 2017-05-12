@@ -1,10 +1,11 @@
-function MidBresenhamCircle(r)
+function MidBresenhamCircle(r,color)
 % MidBresenhamCircle(r)   Bresenham中点算法绘圆
-% r                          半径
+% r                         半径
+% color                     颜色
 x=0;y=r;d=1-r;
 hold on;
 while(x<=y)
-    CirclePoint(x,y);
+    CirclePoint(x,y,color);
     if(d<0)
         d=d+2*x+3;
     else

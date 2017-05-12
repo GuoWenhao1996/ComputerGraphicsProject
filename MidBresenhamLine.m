@@ -1,9 +1,10 @@
-function MidBresenhamLine(x1,y1,x2,y2)
+function MidBresenhamLine(x1,y1,x2,y2,color)
 % MidBresenhamLine(x1,y1,x2,y2)   Bresenham中点算法绘直线
 % x1                                第1个点的横坐标
 % y1                                第1个点的纵坐标
 % x2                                第2个点的横坐标
 % y2                                第2个点的纵坐标
+% color                             颜色
 if(x1>x2)
     x=x1;   y=y1;
     x1=x2;  y1=y2;
@@ -20,7 +21,7 @@ if(k>0)
         x=x1;y=y1;
         hold on;
         while(y<=y2)
-            plot(round(x),round(y),'.r');
+            plot(round(x),round(y),color);
             y=y+1;
             if(d<0)
                 x=x+1;
@@ -36,7 +37,7 @@ if(k>0)
         x=x1;y=y1;
         hold on;
         while(x<=x2)
-            plot(round(x),round(y),'.r');
+            plot(round(x),round(y),color);
             x=x+1;
             if(d<0)
                 y=y+1;
@@ -55,7 +56,7 @@ else
         x=x1;y=y1;
         hold on;
         while(x<=x2)
-            plot(round(x),round(y),'.r');
+            plot(round(x),round(y),color);
             x=x+1;
             if(d<0)
                 y=y-1;
@@ -72,7 +73,7 @@ else
         x=x1;y=y1;
         hold on;
         while(y>=y2)
-            plot(round(x),round(y),'.r');
+            plot(round(x),round(y),color);
             y=y-1;
             if(d<0)
                 x=x+1;

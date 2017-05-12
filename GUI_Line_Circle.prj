@@ -1,13 +1,13 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="25812868" file="E:\ComputerGraphicsProject\GUI_Line_Circle.prj" location="E:\ComputerGraphicsProject" name="GUI_Line_Circle" target="target.mlapps" target-name="应用程序打包">
+  <configuration build-checksum="1671161894" file="E:\ComputerGraphicsProject\GUI_Line_Circle.prj" location="E:\ComputerGraphicsProject" name="GUI_Line_Circle" target="target.mlapps" target-name="应用程序打包">
     <param.appname>GUI_Line_Circle</param.appname>
-    <param.authnamewatermark>郭大神</param.authnamewatermark>
-    <param.email>1842287753@qq.com</param.email>
+    <param.authnamewatermark>郭文浩</param.authnamewatermark>
+    <param.email>1842297753@qq.com</param.email>
     <param.company>cqjtu</param.company>
     <param.icon />
     <param.icons />
-    <param.summary>感觉自己棒棒哒</param.summary>
-    <param.description>完善DDALine  MidBresenhamLine  中画直线 满足各种斜率</param.description>
+    <param.summary>添加颜色参数</param.summary>
+    <param.description>之前版本不能修改颜色，不便于后期颜色处理，因此在此版本中添加颜色。</param.description>
     <param.screenshot />
     <param.version>2.0</param.version>
     <param.products.name />
@@ -15,7 +15,7 @@
     <param.products.version />
     <param.platforms />
     <param.output>E:\ComputerGraphicsProject</param.output>
-    <param.guid>45ea0f3c-1a0c-477c-ad5b-74c5731c436e</param.guid>
+    <param.guid>3dc945b9-dba2-449f-9ae7-51f096a45f5a</param.guid>
     <unset>
       <param.icon />
       <param.icons />
